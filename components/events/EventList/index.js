@@ -1,4 +1,4 @@
-import { EventItem } from "../EventItem/index";
+import { EventItem } from "@components/events/EventItem";
 import styles from './styles.module.css'
 
 const EventList = ({ events }) => {

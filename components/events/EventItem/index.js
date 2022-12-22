@@ -1,6 +1,6 @@
 import { ButtonLike } from "@components/ui/ButtonLike";
+import { DateIcon, AddressIcon, ArrowRightIcon } from "@components/icons";
 import styles from "./styles.module.css";
-import { DateIcon, AddressIcon, ArrowRightIcon } from "../../icons";
 
 const EventItem = ({ id, title, image, date, location }) => {
 	const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
