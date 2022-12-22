@@ -1,4 +1,4 @@
-import { ButtonLike } from "../../ui/ButtonLike";
+import { ButtonLike } from "@components/ui/ButtonLike";
 import styles from "./styles.module.css";
 import { DateIcon, AddressIcon, ArrowRightIcon } from "../../icons";
 
