@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 
-function EventContent(props) {
-	return <section className={styles.content}>{props.children}</section>;
+function EventContent({ children }) {
+	return <section className={styles.content}>{children}</section>;
 }
 
 export { EventContent };

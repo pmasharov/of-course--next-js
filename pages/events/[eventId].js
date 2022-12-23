@@ -1,4 +1,9 @@
 import { useRouter } from "next/router";
+import {
+	EventSummary,
+	EventLogistics,
+	EventContent,
+} from "@components/events/EventDetails";
 import { getEventById } from "../../dummy-data";
 
 const EventDetailsPage = () => {
@@ -11,9 +16,16 @@ const EventDetailsPage = () => {
 	}
 
 	return (
-		<div>
-			<h1>Event Details Page</h1>
-		</div>
+		<>
+			<EventSummary title={event.title} />
+			<EventLogistics
+				date={event.date}
+				address={event.location}
+				image={event.image}
+				imageAlt={event.title}
+			/>
+			<EventContent>{event.description}</EventContent>
+		</>
 	);
 };
 
