@@ -15,4 +15,4 @@ function ResultsTitle({ date }) {
 	);
 }
 
-export default ResultsTitle;
+export { ResultsTitle };

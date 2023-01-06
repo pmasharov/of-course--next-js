@@ -4,6 +4,7 @@ import {
 	EventLogistics,
 	EventContent,
 } from "@components/eventDetails";
+import { ErrorAlert } from "@components/ui/ErrorAlert";
 import { getEventById } from "../../dummy-data";
 
 const EventDetailsPage = () => {
@@ -12,7 +13,11 @@ const EventDetailsPage = () => {
 	const event = getEventById(eventId);
 
 	if (!event) {
-		return <p>No event found</p>;
+		return (
+			<ErrorAlert>
+				<p>No event found</p>
+			</ErrorAlert>
+		);
 	}
 
 	return (
