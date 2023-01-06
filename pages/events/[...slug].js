@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import { useMemo } from "react";
-import { EventList } from "../../components/events/EventList";
+import { EventList } from "@components/events/EventList";
+import ResultsTitle from "@components/events/ResultsTitle";
 import { getFilteredEvents } from "../../dummy-data";
 
 const checkIsFilterDataValid = (yearNum, monthNum) => {
@@ -33,7 +33,14 @@ const FilteredEventsPage = () => {
 		return <p>No events found for chosen filter</p>;
 	}
 
-	return <EventList events={events} />;
+	const date = new Date(yearNum, monthNum - 1);
+
+	return (
+		<>
+			<ResultsTitle date={date} />
+			<EventList events={events} />
+		</>
+	);
 };
 
 export default FilteredEventsPage;
