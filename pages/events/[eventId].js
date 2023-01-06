@@ -3,7 +3,7 @@ import {
 	EventSummary,
 	EventLogistics,
 	EventContent,
-} from "@components/events/EventDetails";
+} from "@components/eventDetails";
 import { getEventById } from "../../dummy-data";
 
 const EventDetailsPage = () => {

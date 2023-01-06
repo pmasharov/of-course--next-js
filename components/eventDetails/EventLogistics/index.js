@@ -1,5 +1,5 @@
 import { DateIcon, AddressIcon } from "@components/icons";
-import { LogisticsItem } from "@components/events/EventDetails/LogisticsItem";
+import { LogisticsItem } from "@components/eventDetails/LogisticsItem";
 import styles from "./styles.module.css";
 
 function EventLogistics({ date, address, image, imageAlt }) {
